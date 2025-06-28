@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../App.css';
-import Login from './Login'; // Corrected path
-import Dashboard from './Dashboard'; // Corrected path
+import Login from './Login';
+import Dashboard from './Dashboard';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="app"> {/* Added for gradient background */}
+      <div className="app">
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
